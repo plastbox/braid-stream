@@ -1,0 +1,24 @@
+{
+  "name": "braid-stream",
+  "version": "1.0.0",
+  "description": "A module for merging several sorted (ongoing) streams into one.",
+  "main": "braid-stream.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plastbox/braid-stream.git"
+  },
+  "keywords": [
+    "streams",
+    "sort",
+    "merge"
+  ],
+  "author": "Kim Helberg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plastbox/braid-stream/issues"
+  },
+  "homepage": "https://github.com/plastbox/braid-stream#readme"
+}
