@@ -9,7 +9,6 @@ module.exports = function braid(sources) {
 	}
 
 	var braidStreamOut = new Readable({
-		objectMode: true,
 		highWaterMark: 1,
 		read(size) {
 			return doPushFromQueue();

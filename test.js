@@ -39,7 +39,7 @@ var sink = new Writable({
 		if(chunk.toString() < this.last) {
 			throw 'No moving backwards, please!';
 		}
-		//console.log(chunk.toString());
+		console.log(chunk.toString());
 		next();
 	}
 });
