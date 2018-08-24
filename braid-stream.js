@@ -12,6 +12,13 @@ module.exports = function braid(sources) {
 		highWaterMark: 1,
 		read(size) {
 			return doPushFromQueue();
+		},
+		destroy(err, callback) {
+			queues = sources.map((source) => {
+				source.destroy();
+				return null;
+			});
+			callback();
 		}
 	});
 
