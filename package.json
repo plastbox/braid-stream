@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/plastbox/braid-stream/issues"
   },
-  "homepage": "https://github.com/plastbox/braid-stream#readme"
+  "homepage": "https://github.com/plastbox/braid-stream#readme",
+  "dependencies": {
+    "@guardsystems/logstream": "^0.1.4"
+  }
 }
