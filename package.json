@@ -22,6 +22,5 @@
   },
   "homepage": "https://github.com/plastbox/braid-stream#readme",
   "dependencies": {
-    "@guardsystems/logstream": "^0.1.4"
   }
 }
