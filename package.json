@@ -1,6 +1,6 @@
 {
   "name": "braid-stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for merging several sorted (ongoing) streams into one.",
   "main": "braid-stream.js",
   "scripts": {
@@ -21,6 +21,5 @@
     "url": "https://github.com/plastbox/braid-stream/issues"
   },
   "homepage": "https://github.com/plastbox/braid-stream#readme",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
