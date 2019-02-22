@@ -41,6 +41,7 @@ module.exports = function braid(sources) {
 			doPushFromQueue();
 		}.bind(source));
 		source.on('end', () => sources.forEach(source => source.destroy()));
+		source.on('close', () => sources.forEach(source => source.destroy()));
 		
 		return null;
 	});
