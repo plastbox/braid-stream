@@ -7,15 +7,15 @@ module.exports = function braid(sources) {
 	if(!(sources instanceof Array)) {
 		sources = Array.prototype.slice.call(arguments, 0);
 	}
-
+	var isDestroyed = false;
 	var braidStreamOut = new Readable({
 		highWaterMark: 1,
 		read(size) {
 			return doPushFromQueue();
 		},
 		destroy(err, callback) {
-			if(!this.destroyed) {
-				this.destroyed = true;
+			if(!isDestroyed) {
+				isDestroyed = true;
 				queues = sources.map(source => {
 					source.destroy();
 					return null;
